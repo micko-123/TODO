@@ -28,6 +28,14 @@ const deleteTodo = async(req, res) =>{
     })
 }
 
+const updateTodo = async( req, res)=>{
+    const todo = await Todo.findByIdAndUpdate(req.params.id, req.body, {new: true})
+
+    res.status(201).json({
+        status:'success',
+        data: todo
+    })
+}
 module.exports = {
     getTodo,
     postTodo,
