@@ -36,6 +36,7 @@ const updateTodo = async( req, res)=>{
         data: todo
     })
 }
+
 module.exports = {
     getTodo,
     postTodo,
