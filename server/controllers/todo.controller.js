@@ -40,5 +40,6 @@ const updateTodo = async( req, res)=>{
 module.exports = {
     getTodo,
     postTodo,
-    deleteTodo
+    deleteTodo,
+    updateTodo
 }
